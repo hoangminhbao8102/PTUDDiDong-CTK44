@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">DiscoverProgram</string>
-    <string name="new_arrival">New Arrival</string>
-    <string name="link_saved">Link Saved</string>
-    <string name="my_home">My Home</string>
-    <string name="eye_stream">Eye Stream</string>
-    <string name="pro_account">Pro Account</string>
-    <string name="recent_files">Recent Files</string>
-</resources>

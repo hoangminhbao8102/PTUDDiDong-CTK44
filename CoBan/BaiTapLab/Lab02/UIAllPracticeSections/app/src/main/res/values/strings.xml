@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">UIAllPracticeSections</string>
-    <string name="txt_name">Ali Connors</string>
-    <string name="txt_phone1">(650) 555-1234</string>
-    <string name="txt_title_mobile">Mobile</string>
-    <string name="txt_phone2">(323) 555-6789</string>
-    <string name="txt_email">aliconnors@example.com</string>
-</resources>
