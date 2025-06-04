@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Máy tính</string>
+    <string name="enter_x_value">Nhập giá trị X</string>
+    <string name="enter_y_value">Nhập giá trị Y</string>
+    <string name="result">Kết quả</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="modulo">%</string>
+    <string name="error_invalid_input">Lỗi nhập liệu</string>
+</resources>
