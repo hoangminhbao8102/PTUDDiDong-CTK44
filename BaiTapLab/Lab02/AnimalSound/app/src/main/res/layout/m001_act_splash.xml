@@ -5,12 +5,14 @@
     android:layout_height="match_parent"
     android:background="@color/design_default_color_primary_dark">
 
+    <!-- Splash/logo section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/design_default_color_primary_dark"
         android:gravity="center"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="128dp"
             android:layout_height="128dp"
@@ -24,7 +26,38 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
-    <include layout="@layout/item_loading"/>
+
+    <!-- Nội dung chính (ẩn/hiện tùy logic Java/Kotlin) -->
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables"> <!-- ban đầu ẩn -->
+
+        <ImageView
+            android:id="@+id/imgAnimal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_dog"
+            android:layout_marginBottom="16dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Loading overlay nếu cần -->
+    <include layout="@layout/item_loading" />
 </FrameLayout>

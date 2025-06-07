@@ -45,6 +45,7 @@
         android:padding="20dp"
         tools:ignore="UselessLeaf">
         <ImageView
+            android:id="@+id/imgPhone1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:padding="10dp"

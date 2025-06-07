@@ -13,13 +13,13 @@
         android:theme="@style/Theme.AnimalSound"
         tools:targetApi="31">
         <activity
-            android:name=".M000ActSplash"
+            android:name=".MainActivity"
             android:noHistory="true"
             android:theme="@style/Full_Screen"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
