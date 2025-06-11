@@ -20,6 +20,6 @@ public class M000SplashFrg extends Fragment {
     }
 
     private void goToM001Screen() {
-        ((MainActivity) getActivity()).goToM001Screen();
+        ((MainActivity) requireActivity()).goToM001Screen();
     }
 }
