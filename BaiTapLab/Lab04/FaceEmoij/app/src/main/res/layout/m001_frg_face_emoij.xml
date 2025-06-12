@@ -117,5 +117,18 @@
                 android:src="@drawable/ic_tire"
                 tools:ignore="ContentDescription" />
         </TableRow>
+
+        <Button
+            android:id="@+id/btnRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:text="Random Emoji"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText,TextContrastCheck" />
     </LinearLayout>
 </FrameLayout>

@@ -1,6 +1,7 @@
 package com.example.englishlearning;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,14 +36,15 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         LinearLayout lnMain = findViewById(R.id.ln_main);
         lnMain.removeAllViews();
-        //Tạo ra các Item topic động và add vào LinearLayout
+
         for (int i = 0; i < ID_DRAWABLES.length; i++) {
             @SuppressLint("InflateParams") View v = LayoutInflater.from(this).inflate(R.layout.item_topic, null);
             ImageView ivTopic = v.findViewById(R.id.iv_topic);
             TextView tvTopic = v.findViewById(R.id.tv_topic);
+
             ivTopic.setImageResource(ID_DRAWABLES[i]);
             tvTopic.setText(ID_TEXTS[i]);
-            //Quy định không gian chiếm của mỗi item view = 1
+
             LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.MATCH_PARENT,
@@ -50,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
             );
             v.setLayoutParams(param);
             lnMain.addView(v);
+
+            int finalI = i;
+            v.setOnClickListener(view -> {
+                String topic = getString(ID_TEXTS[finalI]);
+                // Mở Activity mới
+                Intent intent = new Intent(MainActivity.this, TopicVocabularyActivity.class);
+                intent.putExtra("topic", topic);
+                startActivity(intent);
+            });
         }
     }
 }

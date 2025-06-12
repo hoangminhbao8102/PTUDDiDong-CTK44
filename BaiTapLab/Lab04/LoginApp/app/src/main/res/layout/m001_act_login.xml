@@ -24,6 +24,7 @@
             android:textSize="20sp" />
     </FrameLayout>
     <EditText
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="30dp"
@@ -38,6 +39,7 @@
         tools:ignore="Autofill,TextFields,VisualLintTextFieldSize" />
 
     <EditText
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="30dp"
@@ -61,6 +63,7 @@
         android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/tvLogin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="end"
