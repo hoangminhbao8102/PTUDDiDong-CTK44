@@ -4,4 +4,5 @@
     <string name="txt_trans">Trans</string>
     <string name="txt_rotate">Rotate</string>
     <string name="txt_alpha">Alpha</string>
+    <string name="txt_random">Random</string>
 </resources>

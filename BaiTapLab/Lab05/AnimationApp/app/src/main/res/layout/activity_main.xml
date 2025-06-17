@@ -30,7 +30,8 @@
             android:text="@string/txt_alpha"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="VisualLintButtonSize" />
         <Button
             android:id="@+id/bt_scale"
             style="?android:attr/buttonBarStyle"
@@ -42,7 +43,8 @@
             android:backgroundTint="@color/design_default_color_primary"
             android:text="@string/txt_scale"
             android:textAllCaps="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="VisualLintButtonSize" />
         <Button
             android:id="@+id/bt_trans"
             style="?android:attr/buttonBarStyle"
@@ -54,7 +56,8 @@
             android:backgroundTint="@color/design_default_color_primary"
             android:text="@string/txt_trans"
             android:textAllCaps="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="VisualLintButtonSize" />
         <Button
             android:id="@+id/bt_rotate"
             style="?android:attr/buttonBarStyle"
@@ -66,6 +69,14 @@
             android:backgroundTint="@color/design_default_color_primary"
             android:text="@string/txt_rotate"
             android:textAllCaps="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="VisualLintButtonSize" />
     </TableRow>
+    <Button
+        android:id="@+id/bt_random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_random"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 </LinearLayout>
