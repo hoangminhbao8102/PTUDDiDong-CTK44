@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/textbox_hint"
+            android:inputType="numberDecimal"
+            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <Spinner
+            android:id="@+id/spnUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- USD -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/usd" android:contentDescription="@string/usd_name" />
+                <TextView android:text="@string/usd_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+                <TextView android:id="@+id/lblUsd" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- EUR -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/eur" android:contentDescription="@string/eur_name" />
+                <TextView android:text="@string/eur_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+                <TextView android:id="@+id/lblEur" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- GBP -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/gbp" android:contentDescription="@string/gbp_name" />
+                <TextView android:text="@string/gbp_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblGbp" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- INR -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/inr" android:contentDescription="@string/inr_name" />
+                <TextView android:text="@string/inr_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblInr" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- AUD -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/aud" android:contentDescription="@string/aud_name" />
+                <TextView android:text="@string/aud_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblAud" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+            </TableRow>
+
+            <!-- CAD -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/cad" android:contentDescription="@string/cad_name" />
+                <TextView android:text="@string/cad_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblCad" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- ZAR -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/zar" android:contentDescription="@string/zar_name" />
+                <TextView android:text="@string/zar_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblZar" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- NZD -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/nzd" android:contentDescription="@string/nzd_name" />
+                <TextView android:text="@string/nzd_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblNzd" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- JPY -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/jpy" android:contentDescription="@string/jpy_name" />
+                <TextView android:text="@string/jpy_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblJpy" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+            <!-- VND -->
+            <TableRow android:padding="3dp" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/vnd" android:contentDescription="@string/vnd_name" />
+                <TextView android:text="@string/vnd_unit" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"  />
+                <TextView android:id="@+id/lblVnd" android:paddingLeft="10dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
