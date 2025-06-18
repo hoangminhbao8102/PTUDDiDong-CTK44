@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ECEFF1">
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_red"
+        android:text="Red Button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button_blue"
+        android:text="Blue Button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_red"
+        android:text="Show Toast"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_blue"
+        android:text="Show Dialog"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+</LinearLayout>
