@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add"
+        android:title="Thêm món ăn"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource,HardcodedText" />
+</menu>
