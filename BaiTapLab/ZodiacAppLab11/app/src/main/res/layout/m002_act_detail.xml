@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên cung"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imgZodiacDetail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/aries"
+        android:layout_marginTop="16dp"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/tvContentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết cung hoàng đạo"
+            tools:ignore="HardcodedText" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
