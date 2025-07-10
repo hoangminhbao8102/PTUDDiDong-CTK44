@@ -17,4 +17,4 @@ Hoc kì I - Năm 3 (2022 - 2023)<br>
 <strong>Giáo viên hướng dẫn thực hành:</strong> Anh KS. La Quốc Thắng<br>
 <br>
 Link Github: <a href="https://github.com/hoangminhbao8102/PTUDDiDong-CTK44">hoangminhbao8102/PTUDDiDong-CTK44</a><br>
-<h1 style="color:red;">CHƯA HOÀN THÀNH</h1>
+<h1 style="color:red;">SẮP HOÀN THÀNH</h1>
