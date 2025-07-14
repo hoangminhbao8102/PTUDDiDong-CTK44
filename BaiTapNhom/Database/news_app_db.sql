@@ -1,0 +1,16 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE android_metadata (locale TEXT);
+INSERT INTO android_metadata VALUES('vi_VN');
+CREATE TABLE Users(id INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT UNIQUE,password TEXT,role TEXT);
+INSERT INTO Users VALUES(1,'admin','admin123','admin');
+INSERT INTO Users VALUES(2,'user1','123456','user');
+INSERT INTO Users VALUES(3,'user2','135789','user');
+CREATE TABLE Articles(id INTEGER PRIMARY KEY AUTOINCREMENT,title TEXT,content TEXT,views INTEGER);
+INSERT INTO Articles VALUES(1,'Tin công nghệ 1','Nội dung bài báo công nghệ số 1',10);
+INSERT INTO Articles VALUES(3,'Tin thể thao 1','Sự kiện thể thao 1',0);
+INSERT INTO Articles VALUES(4,'Tin thể thao 2','Nội dung thể thao hấp dẫn',0);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('Users',3);
+INSERT INTO sqlite_sequence VALUES('Articles',4);
+COMMIT;
