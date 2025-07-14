@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="VisualLintBounds">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THỐNG KÊ"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalArticles"
+        android:text="Tổng số bài viết: 0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalViews"
+        android:text="Tổng lượt xem: 0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalUsers"
+        android:text="Tổng số người dùng: 0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnAddArticle"
+        android:text="Thêm bài viết mới"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <ListView
+        android:id="@+id/lvArticles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="Đăng xuất"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+</LinearLayout>
